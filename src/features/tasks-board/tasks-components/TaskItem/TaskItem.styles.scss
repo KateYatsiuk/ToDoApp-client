@@ -1,0 +1,29 @@
+.task-card {
+    width: 300px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .task-card:hover {
+    cursor: pointer;
+  }
+
+  .task-card .ant-card-head {
+    background-color: var(--bg-color2);
+    padding: 8px;
+  }
+
+  .card-header {
+    font-size: 18px;
+  }
+
+  .task-card-header {
+    font-size: 15px;
+  }
+  
+  .task-card .ant-popover {
+    max-width: 250px;
+  }
+  .task-card .ant-popover-buttons button:first-child {
+    margin-right: 8px;
+  }

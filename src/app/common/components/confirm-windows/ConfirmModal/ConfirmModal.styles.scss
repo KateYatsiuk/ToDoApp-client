@@ -1,0 +1,6 @@
+@use '/src/assets/sass/mixins/mixins' as mut;
+
+.centered-modal {
+  @include mut.d-flex;
+  min-height: 70vh;
+}

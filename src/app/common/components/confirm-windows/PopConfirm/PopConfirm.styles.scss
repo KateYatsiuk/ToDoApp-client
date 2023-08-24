@@ -1,0 +1,6 @@
+@use '/src/assets/sass/mixins/mixins' as mut;
+
+.button-container {
+  @include mut.d-flex(row, flex-end, center);
+  gap: 8px;
+}

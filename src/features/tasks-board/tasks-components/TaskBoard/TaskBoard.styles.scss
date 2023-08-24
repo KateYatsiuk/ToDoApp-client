@@ -1,0 +1,14 @@
+@use '/src/assets/sass/mixins/mixins' as mut;
+
+.my-card {
+    border-color: var(--main-color);
+    background-color: var(--bg-color1);
+    gap: 10px;
+    width: 350px;
+    @include mut.d-flex(column);
+    margin-bottom: 10px;
+}
+
+.my-card .ant-card-head {
+    padding: 0;
+  }

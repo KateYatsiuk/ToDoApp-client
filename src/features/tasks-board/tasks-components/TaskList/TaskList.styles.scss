@@ -1,0 +1,15 @@
+@use '/src/assets/sass/mixins/mixins' as mut;
+
+.task-list {  
+    border-radius: 10px;
+    height: 300px;
+    overflow: auto;
+    width: max-content;
+    padding: 5px;
+    @include mut.scroll-bar();
+}
+
+  .empty-container {
+    @include mut.d-flex;
+    height: 80%;
+}

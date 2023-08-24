@@ -1,0 +1,5 @@
+@use '/src/assets/sass/mixins/mixins' as mut;
+
+.mainBoard {
+    @include mut.d-flex;
+}
