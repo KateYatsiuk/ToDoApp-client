@@ -17,7 +17,6 @@ const MainTasks: React.FC = () => {
         if (error.response && error.response.status !== 404) {
           alert("An error occurred.");
         }
-        console.log(error);
       });
   }, []);
   

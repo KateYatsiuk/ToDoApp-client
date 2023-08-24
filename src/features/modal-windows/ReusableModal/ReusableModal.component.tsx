@@ -26,7 +26,6 @@ const CustomModal: React.FC<CustomModalProps> = ({ visible, onCancel, onSave, ti
       }
       setIsFormTouched(false);
     } catch (errorInfo) {
-      console.log('Failed:', errorInfo);
       message.error('Failed to save the data');
     }
   };

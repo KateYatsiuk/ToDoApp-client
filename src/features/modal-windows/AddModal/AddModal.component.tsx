@@ -11,13 +11,11 @@ const AddModal: React.FC<IAddModalProps> = ({ visible, onCancel, actionWithTask:
   const onAdd = async () => {
     try {
       const response = await createTask(todo);
-      console.log("TODO " + todo.title + '' + todo.description);
       message.success('Task created successfully');
       addTask(response);
       onCancel();
       setTodo({ title: '', description: '' });
     } catch (errorInfo) {
-      console.log('Failed:', errorInfo);
       message.error('Failed to create the task');
     }
   };

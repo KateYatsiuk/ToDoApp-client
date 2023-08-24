@@ -16,7 +16,6 @@ const UpdateModal: React.FC<IUpdateModal> = (props) => {
       props.actionWithTask(todo);
       props.onCancel();
     } catch (errorInfo) {
-      console.log('Failed:', errorInfo);
       message.error('Failed to update the task');
     }
   };

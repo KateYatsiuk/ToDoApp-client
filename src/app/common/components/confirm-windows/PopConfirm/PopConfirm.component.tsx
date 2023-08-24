@@ -13,7 +13,6 @@ const PopoverContent: React.FC<PopoverContentProps> = ({ taskId, deleteTask: dis
       displayDeleted(taskId);
       message.success("Task deleted successfully");
     } catch (error) {
-      console.log(error);
       message.error("Failed to delete the task");
     }
   };
